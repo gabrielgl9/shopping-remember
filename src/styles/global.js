@@ -8,9 +8,16 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        font-size: 1.375em;
+    }
+
     body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
+        font-size: 100%;
+        color: #2f2f33; 
+        
+        line-height: 1.4;
         text-rendering: optimizeLegibility;
         --webkit-font-smoothing: antialiased;
     }
