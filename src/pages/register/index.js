@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import { Button, TextField } from '../../components';
+import { Button, TextField, ContentIntro } from '../../components';
 
-import { Container, ContentForm, ContentIntro } from "./styles";
+import { Container } from "../../styles/container";
+import { ContentForm } from "../../styles/content-form";
 
-const Login = () => {
+const Register = () => {
   
     const [state, setState] = useState({});
 
@@ -22,8 +23,23 @@ const Login = () => {
         <Container>
             <ContentIntro></ContentIntro>
             <ContentForm>
-                <h2> Login </h2>
+                <h2> Register </h2>
                 <form onSubmit={handleSubmit}>
+
+                    <TextField 
+                        type="text" 
+                        name="name" 
+                        value={state.name} 
+                        label="Full Name"
+                        onChange={handleChange}/>
+
+                    <TextField 
+                        type="email" 
+                        name="email" 
+                        value={state.email} 
+                        label="E-mail"
+                        onChange={handleChange}/>
+
                     <TextField 
                         type="text" 
                         name="login" 
@@ -38,11 +54,11 @@ const Login = () => {
                         label="Password"
                         onChange={handleChange}/>
 
-                    <Button value="Login"></Button>
+                    <Button value="Register"></Button>
                 </form>
             </ContentForm>
         </Container>
     )
 }
 
-export default Login;
+export default Register;

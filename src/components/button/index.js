@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { ButtonStyled } from "./style"
+import { ButtonStyled } from "./styles"
 const Button = ({ value, type = "submit"}) => {
     return (
         <ButtonStyled 
