@@ -8,5 +8,5 @@ export const Container = styled.div`
 
     min-height: 100%;
     width: 50%;
-    background: #0a9992;
+    background: var(--green);
 `;

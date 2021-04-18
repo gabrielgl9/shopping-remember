@@ -8,7 +8,7 @@ export const ContentForm = styled.div`
 
     min-height: 100%;
     width: 50%;
-    background: #FFFFFF;
+    background: var(--white);
 
     form {
         width: 70%;

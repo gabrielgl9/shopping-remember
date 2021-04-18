@@ -7,13 +7,13 @@ export const ButtonStyled = styled.button`
     width: 100%;
     margin: 20px 0;
 
-    background: #0a9992;
+    background: var(--green);
     font-size: 18px;
     color: #FFF;
     font-weight: 600;
     cursor: pointer;
 
     border-radius: 5px;
-    border: 1px solid #0a9992;
+    border: 1px solid var(--green);
     padding: 20px;
 `;

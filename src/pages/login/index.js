@@ -1,8 +1,21 @@
-import React, {useState} from 'react';
-import { Button, TextField, ContentIntro } from '../../components';
-
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Button, ContentIntro, TextField } from '../../components';
 import { Container } from "../../styles/container";
 import { ContentForm } from "../../styles/content-form";
+
+
+const RedirectionStyle = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    a {
+        text-decoration: none;
+        color: var(--blue);
+    }
+`;
 
 const Login = () => {
   
@@ -38,6 +51,11 @@ const Login = () => {
                         value={state.password} 
                         label="Password"
                         onChange={handleChange}/>
+                    
+                    <RedirectionStyle>
+                        <Link to="/forget-password"> Forgot your password? </Link>
+                        <Link to="/register"> Create your account </Link>
+                    </RedirectionStyle> 
 
                     <Button value="Login"></Button>
                 </form>

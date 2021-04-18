@@ -7,12 +7,12 @@ export const FormGroup = styled.div`
 
     label {
         font-size: 18px;
-        color: #2f2f33;
+        color: var(--black);
         margin: 10px 0;
     }
 
     input {
-        border: 1px solid 2f2f33;
+        border: 1px solid var(--black);
         border-radius: 3px;
         padding: 10px;
         font-size: 18px;
