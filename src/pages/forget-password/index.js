@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import { Button, TextField, ContentIntro } from '../../components';
 
-import { Container } from "../../styles/container";
-import { ContentForm } from "../../styles/content-form";
-
+import { Container, ContentForm } from "../../styles/helpers";
 
 const ForgetPassword = () => {
   

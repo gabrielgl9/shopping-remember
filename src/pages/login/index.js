@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { Button, ContentIntro, TextField } from '../../components';
-import { Container } from "../../styles/container";
-import { ContentForm } from "../../styles/content-form";
+import { Container, ContentForm } from "../../styles/helpers";
 
 
 const RedirectionStyle = styled.div`

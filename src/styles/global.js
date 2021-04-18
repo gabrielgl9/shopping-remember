@@ -10,9 +10,12 @@ export default createGlobalStyle`
 
     #root {
         --green: #0a9992;
+        --dark-green: #02615c;
+        --full-dark-green: #013533;
         --black: #2f2f33;
         --white: #ffffff; 
         --blue: #4398ee;
+        --grey: #ececec;
     }
 
     html {
