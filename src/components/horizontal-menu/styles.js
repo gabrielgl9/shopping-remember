@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 
         position: relative;
         height: 10vh;
-        width: 100%;
+        width: 10%;
         padding: 10px; 
     }
     
@@ -33,11 +33,22 @@ export const Wrapper = styled.div`
         width: 100%;
         padding: 10px;   
 
-        img, .helpIcon {
-            margin-right: 10px;
+        .show-items {
+            display: flex;
+            justify-content: inherit;
+            align-items: inherit;
+        }
+        
+        .helpIcon {
+            margin: 0 10px;
             height: 100%;
             font-size: -webkit-xxx-large;
             color: var(--white);
         }
+
+        img, .helpIcon {
+            cursor: pointer;
+        }
     }
 `;
+

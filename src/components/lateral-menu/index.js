@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { FaPlusCircle } from 'react-icons/fa';
+import { FaPlusCircle, FaUsers } from 'react-icons/fa';
 
 import { Wrapper } from './styles';
 
 const LateralMenu = () => {
 
-  const [families, setFamilies] = useState([
+  const [families] = useState([
     {
       id: 1,
       name: `Viegas`
@@ -35,7 +35,8 @@ const LateralMenu = () => {
           <ul>
             { families && families.map((item) => (
                 <li key={item.id}>
-                  {item.name}
+                  <FaUsers className="user-icons"/>
+                  <span> {item.name} </span>
                 </li>
             ))}
           </ul>

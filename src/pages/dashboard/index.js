@@ -10,9 +10,7 @@ const Dashboard = () => {
         <HorizontalMenu />
         <LateralMenu />
         <Content>
-            {/* <div className="wrapper"> */}
-              <img src={usher} alt="welcome"/>
-            {/* </div> */}
+          <img src={usher} alt="welcome"/>
         </Content>
       </Container>
   );

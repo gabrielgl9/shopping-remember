@@ -23,4 +23,8 @@ export const Wrapper = styled.div`
     ul > li {
         padding: 10px;
     }
+
+    li > .user-icons {
+        vertical-align: middle;
+    }
 `;
